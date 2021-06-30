@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Website with HTML CSS and Javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="navbar">
+        <a href="#" class="logo">Good <span>Foods</span></a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="menuIcon" onclick="menuToggle();"></span>
+      </header>
+      <div class="content">
+        <div class="bannerText" id="slideshowText">
+          <div class="active">
+            <h2>EAT Healthy<br />Stay Healthy</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+              dicta deserunt deleniti quasi ipsam. Necessitatibus placeat id eum
+              aut molestiae saepe quia quaerat officiis, quod laudantium, dolore
+              tempore, optio eaque?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h2>EAT Your<br />Veggies</h2>
+            <p>
+              aut molestiae saepe quia quaerat officiis, quod laudantium, dolore
+              tempore, optio eaque?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h2>Good Food<br />Good Mood</h2>
+            <p>
+              Necessitatibus placeat id eu aut molestiae saepe quia quaerat
+              officiis, quod laudantium, dolore tempore, optio eaque?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="bannerImg" id="slideshow">
+          <img src="./img/img1.jpg" class="active" />
+          <img src="./img/img2.jpg" />
+          <img src="./img/img3.jpg" />
+        </div>
+      </div>
+      <div class="icons">
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="./img/facebook.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/linkedin.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/twitter.png" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="controls">
+          <li>
+            <a
+              ><img src="./img/back.png" onclick="prevSlide();prevSlideText();"
+            /></a>
+          </li>
+          <li>
+            <a
+              ><img
+                src="./img/right.png"
+                onclick="nextSlide();nextSlideText();"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
